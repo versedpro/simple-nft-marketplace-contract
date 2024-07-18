@@ -1,0 +1,137 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xc5B54ED867b12225bcf113B77eE77474FE2e151c",
+    "txHash": "0x7a93586925808b0cac05f1fef46e2b7076d099277ff4dd5ad631416ce5c4ec2a"
+  },
+  "proxies": [
+    {
+      "address": "0xd757111929a012BC88bDbBe5b6f3bC5C1A4D041A",
+      "txHash": "0x5e69d7d10db972ed7cabd1d81ff50a9b674a76db7453242f8f9b911e4f9e4f2c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2cCfA753660eab902F6ec1Bf6120e950FDAE340E",
+      "txHash": "0x553a4e80dd4f6811cb2464d5de77c918dd97affbd203430bcc209f6381855093",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x91566367dA6A3611F4D8980551268ce17cD1cfb6",
+      "txHash": "0x7119826c3a1e45e024f8c1bac7a2a97ae03c11a00b011dbd075ff5356f0248b9",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "e374e63676c1bd0a0a7296dbe35e93146e2ffd31d34dad91be2116940f1653c3": {
+      "address": "0xf9fE23d1Ce866FD58E179A389c53fe15Cf8b2290",
+      "txHash": "0x82d515e3e952f5216d6964333fe108686ab10f4f4e59b9cd23bc311eed7b6f0b",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "hasAdminRole",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_bytes32)",
+            "contract": "Rolable",
+            "src": "contracts\\Marketplace.sol:12"
+          },
+          {
+            "label": "usedSignature",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_bytes_memory_ptr,t_bool)",
+            "contract": "Marketplace",
+            "src": "contracts\\Marketplace.sol:130"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_bytes_memory_ptr": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bytes32)": {
+            "label": "mapping(address => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes_memory_ptr,t_bool)": {
+            "label": "mapping(bytes => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes"
+          }
+        }
+      }
+    }
+  }
+}
